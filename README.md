@@ -1,15 +1,12 @@
 # nativescript-wechat-share
 
-Now only iOS is supported.
-Android is not supported because WeChat SDK requires an acitivity is defined under the same package of the main project while the NativeScript does not support this now(v1.4).
-
 ## How to use
 
 #### Add the plugin
 
 by ```tns plugin add nativescript-wechat-share```.
 
-#### Configurations in Xcode
+#### Configurations in Xcode for iOS
 
 Open the iOS project in XCode and do configurations shown below:
 1. Add libraries that the WeChat SDK depends on by Target->Build Phases->Link Binary With Libraries: 
@@ -40,6 +37,10 @@ Open the iOS project in XCode and do configurations shown below:
     - LSApplicationQueriesSchemes is set so your app can check if WeChat is installed or not.
     - NSAppTransportSecurity is set to NSAllowsArbitraryLoads so that the iOS will not force you use https exclusively
     - If you want this default high security setting NSAppTransportSecurity brings, you can use NSExceptionDomains instead of NSAllowsArbitraryLoads, and and pingma.qq.com as a whitelisted domain name.
+
+#### Configurations for Android
+
+Move the WXEntryActivity.ts to app/   
 
 #### Prepare codes before sharing
 
