@@ -20,6 +20,13 @@
     "name": "Zhiqi Lin",
     "email": "linzhiqi07@gmail.com"
   },
+  "contributors": [
+    {
+      "name": "Antonio Cueva",
+      "email": "cuevajodar@gmail.com",
+      "url": "https://github.com/AntonioCuevaUrraco"
+    }
+  ],
   "license": {
     "type": "",
     "url": "https://github.com/linzhiqi/nativescript-wechat-share/blob/master/LICENSE"
